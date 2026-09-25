@@ -12,6 +12,8 @@ class Calculator {
         pink.addNumbers();
         pink.subNumbers(10,15);
         pink.subNumbers(1000, 50);
+        System.out.println("Div: "+pink.divNumbers());
+        System.out.println("Mul:"+ pink.mulNumbers(10, 20));
     }
     
     // Method 01: non-taken, non-returned 
@@ -26,5 +28,14 @@ class Calculator {
         System.out.println("Sub: "+ sub);
     }
     
-    //Method 3
+    //Method 3 : Return type; Non- Parameterized
+    int divNumbers(){
+        int div = num1/num2;
+        return div;
+    }
+    //Method 4: 
+    int mulNumbers(int a, int b){
+        int result = a * b;
+        return result;
+    }
 }
